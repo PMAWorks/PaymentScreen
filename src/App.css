@@ -1,0 +1,401 @@
+.App{
+  width: 100%;
+  height: 200vh;
+  margin: 0px;
+  background: rgb(91,10,27);
+background: linear-gradient(318deg, rgba(91,10,27,1) 10%, rgba(51,215,172,1) 58%, rgba(0,14,255,1) 100%);
+  vertical-align: middle;
+}
+
+.Phone{
+  position: relative;
+  top: 80px;
+  width: 375px;
+  max-width: 375px;
+  height: 808px;
+  border: 5px solid gray;
+  margin: auto;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.Mono{
+  position: relative;
+
+  width: 200px;
+  background-color: gray;
+  height: 35px;
+  margin: 0px auto;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 2;
+}
+
+.Camera{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(231, 227, 194);
+  border-radius: 10px;
+  margin-left: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.Dynamic{
+  position: relative;
+  left: 60px;
+  top: -5px;
+  width: 80px;
+  height: 5px;
+  border-radius: 10px;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.8);
+  background-color: black;
+}
+
+.PaymentScreen{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 375px;
+  margin-top: -35px;
+  z-index: 1;
+  background: rgb(0,4,25);
+background: linear-gradient(318deg, rgba(0,4,25,1) 22%, rgba(2,4,161,1) 63%, rgba(34,169,215,1) 100%);
+
+
+  display: grid;
+  grid-template-rows: 82px 200px 526px;
+  overflow: hidden;
+}
+
+.FirstRowContainer{
+  width: 100%;
+  max-width: 375px;
+}
+
+.FirstRow{
+  position: relative;
+  width: 90%;
+  max-width: 375px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Info{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.ActiveInfo{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100px;
+  /* identical to box height */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.Cards{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card0{
+  width: 289px;
+height: 162px;
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+margin: auto;
+border-radius: 10px;
+}
+
+.Card1{
+  width: 289px;
+height: 162px;
+background: rgb(91,10,27);
+background: linear-gradient(318deg, rgba(91,10,27,1) 10%, rgba(51,215,172,1) 58%, rgba(0,14,255,1) 100%);
+
+margin: auto;
+border-radius: 10px;
+}
+
+.Card2{
+  width: 289px;
+height: 162px;
+background: rgb(34,193,195);
+background: linear-gradient(318deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+
+margin: auto;
+border-radius: 10px;
+}
+
+.Card3{
+  width: 289px;
+height: 162px;
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+margin: auto;
+border-radius: 10px;
+}
+
+.Card4{
+  width: 289px;
+height: 162px;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+margin: auto;
+border-radius: 10px;
+}
+
+.Logos{
+  position: relative;
+  top: 29px;
+  left: 33px;
+}
+
+.Visa{
+  position: relative;
+  top: -55px;
+  left: 140px;
+}
+
+.Number{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+color: #FFFFFF;
+position: relative;
+top: -80px;
+left: 33px;
+}
+
+.Name{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+text-transform: uppercase;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+position: relative;
+top: -70px;
+left: 33px;
+}
+
+.PaymentInfoContainer{
+  width: 100%;
+  max-width: 375px;
+  height: 526px;
+  border-top: 3px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(50px);
+/* Note: backdrop-filter has minimal browser support */
+position: relative;
+border-radius: 35px;
+}
+
+.PaymentInfo{
+  margin: 45px;
+  display: grid;
+  grid-template-rows: 26px 51px 26px 51px 56px 46px 26px 75px ;
+}
+
+.InputLabel{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.PaymentInfoInput{
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  height: 20px;
+  outline: none;
+  
+
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: 0.055em;
+
+color: #FFFFFF;
+text-transform: uppercase;
+}
+
+.InputForm{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100% 1fr;
+}
+
+.PaymentGoodCheck{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: 0.055em;
+
+color: #FFFFFF;
+text-transform: uppercase;
+position: relative;
+left: -6px;
+}
+
+.PaymentGoodCheckForCheckBox{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: 0.055em;
+
+color: #FFFFFF;
+text-transform: uppercase;
+position: relative;
+top: -4px;
+}
+
+.PaymentBadCheck{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+position: relative;
+left: -6px;
+letter-spacing: 0.055em;
+
+color: #ff5e5e;
+text-transform: uppercase;
+}
+
+.DubbleInput{
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+}
+
+.CheckLabel{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Check{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+
+.CheckBox{
+  border-radius: 10px;
+  height: 13px;
+  width: 13px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.GoodCheckBox{
+  border-radius: 10px;
+  height: 13px;
+  width: 13px;
+  border: 2px solid white;
+  background-color: green;
+  cursor: pointer;
+}
+
+.TotalAmount{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: center;
+color: #FFFFFF;
+}
+
+.Price{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.PayButton{
+  width: 187px;
+height: 43px;
+background-color: white;
+margin: 0px auto;
+background: #FFFFFF;
+box-shadow: 0px 6px 7px -1px rgba(0, 0, 0, 0.25);
+border-radius: 95px;
+text-align: center;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 43px;
+/* identical to box height */
+color: #003571;
+cursor: pointer;
+
+}
