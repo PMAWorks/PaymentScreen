@@ -26,6 +26,20 @@ function App() {
     ExpDate: "29.11.2022",
     CVC: 124,
     CardType: "Mir"
+  },
+  {
+    Name: "valeriy Pavlovich",
+    CardNumber: "1255 3462 2356 2367",
+    ExpDate: "29.11.2022",
+    CVC: 124,
+    CardType: "Mir"
+  },
+  {
+    Name: "Igor Pavlovich",
+    CardNumber: "1255 3462 2356 2367",
+    ExpDate: "29.11.2022",
+    CVC: 124,
+    CardType: "Mir"
   }]
 
 
@@ -103,7 +117,7 @@ function App() {
       var Interval = setInterval(OnRight, 5)
     }
 
-    if(scroll < 80 && scroll > -80){
+    if(scroll < 50 && scroll > -50){
       if(scroll>0){
         var ZeroRightInterval = setInterval(SetZeroRightInterval, 5)
       }
